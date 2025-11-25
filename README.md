@@ -29,6 +29,8 @@ A Markdown compiler designed to process inline and block LaTeX equations for Pan
 
 ## Installation
 
+We provide a detailed blog for usage, visit [This Link]("https://m45hiro.github.io/2025/11/25/README/")
+
 Clone this repository and make sure you have Python 3.8+ installed:
 
 ```bash
