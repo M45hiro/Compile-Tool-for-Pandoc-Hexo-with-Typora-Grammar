@@ -1,1 +1,36 @@
 # Compile-Tool-for-Pandoc-Hexo-with-Typora-Grammar
+
+A Markdown compiler designed to process inline and block LaTeX equations for Pandoc and Hexo, with Typora-compatible grammar adjustments. This tool ensures that math formulas are properly escaped and formatted for rendering in Hexo blogs using MathJax or KaTeX.
+
+---
+
+## Features
+
+- **Typora rendering consistency**  
+  Supports Typora syntax and ensures that what you see in Typora matches exactly what Hexo + Pandoc will render.
+
+- **Automatic Markdown file discovery**  
+  Recursively searches a specified folder for `.md` files.
+
+- **Inline equation processing**  
+  Detects all inline LaTeX formulas (wrapped in single `$`) and compiles them with proper escaping for Pandoc and Hexo.
+
+- **Block equation processing**  
+  Detects `\begin{equation}...\end{equation}` and `\begin{aligned}...\end{aligned}` blocks.  
+  Adjusts `\quad` spacing commands and preserves correct backslashes for MathJax/KaTeX.
+
+- **Typora grammar corrections**  
+  Automatically removes unwanted spaces around `$` symbols, while keeping literal `$` signs intact.
+
+- **Batch compilation**  
+  Processes all Markdown files in a folder and outputs the compiled files to a dedicated `output/` folder.
+
+---
+
+## Installation
+
+Clone this repository and make sure you have Python 3.8+ installed:
+
+```bash
+git clone https://github.com/M45hiro/Compile-Tool-for-Pandoc-Hexo-with-Typora-Grammar.git
+cd Compile-Tool-for-Pandoc-Hexo-with-Typora-Grammar
